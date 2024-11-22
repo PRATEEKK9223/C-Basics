@@ -1,0 +1,18 @@
+// passinh array in function as a argument with retun type
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+char* display();
+void main()
+{
+ char *str;
+ str=display();
+ printf("%s", str);
+ }
+ char* display()
+ {
+  char *str= (char*)malloc(8*sizeof(char));
+  strcpy(str, "prateekk");
+  return str;
+ }
