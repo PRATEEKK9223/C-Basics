@@ -1,0 +1,17 @@
+// passinh array in function as a argument
+#include<stdio.h>
+#include<string.h>
+void display(char [], char []);
+void main()
+{
+ char name[]="PRATEEKK  ";
+ char name2[]="akki";
+ display(name, name2);
+ }
+ void display(char str1[],char str2[])
+ {
+  strcat(str1,str2);
+  printf("%s", str1);
+  }
+
+Passing string in function
