@@ -1,0 +1,41 @@
+//application of function pointer
+#include<stdio.h>
+//void sum(int,int);
+//void sub(int, int);
+
+void sum(int a, int b)
+{
+ printf("%d", a+b);
+ }
+ void sub(int a, int b)
+ {
+  printf("%d", a-b);
+ }
+ void pro(int a, int b)
+ {
+  printf("%d", a*b);
+ }
+ void main()
+ {
+  int ch, a, b;
+  printf("enter your choice \n");
+  scanf("%d", &ch);
+  a=10;
+  b=30;
+  /*switch(ch)
+  {
+   case 0: sum(a, b);
+   break;
+   case 1: sub(a, b);
+   break;
+   case 2: pro(a, b);
+   break;
+   deafault:
+   printf("enter valid choice");
+  }*/
+  
+  void (*fptr[])(int, int)={sum, sub, pro};
+  fptr[ch](a, b);
+  }
+ 
+  Pointer function array
