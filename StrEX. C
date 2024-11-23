@@ -1,0 +1,17 @@
+#include<stdio.h>
+char* display();
+void main()
+{
+ char* array;
+ array=display();
+ printf("%s\n", array);
+ array[0]='g';
+ printf("%s", array);
+ }
+ 
+ char* display()
+ {
+  static char name[]="prateeek";
+  return name;
+ }
+  Another way to return the string
